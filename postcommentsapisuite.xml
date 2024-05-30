@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Post Comments API" parallel="classes">
+    <test name="API Testing">
+        <classes>
+            <class name="org.PostCommentsAPI.PostCommentsE2ETest">
+                <methods>
+                    <include name="testGetAllPost"/>
+                    <include name="testGetAllComments"/>
+                    <include name="testGetPostIdOne"/>
+                    <include name="testPostNewComment"/>
+                    <include name="testUpdateComment"/>
+                    <include name="testPatchComment"/>
+                    <include name="testDeleteComment"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
