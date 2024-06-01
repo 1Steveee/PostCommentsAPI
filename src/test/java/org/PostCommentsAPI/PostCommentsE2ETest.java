@@ -112,7 +112,7 @@ public class PostCommentsE2ETest extends BaseSetup {
                 .when()
                 .put(String.format("/posts/%s", POST_ID))
                 .then()
-                .statusCode(OK_STATUS_CODE)
+                .statusCode(200)
                 .and()
                 .assertThat()
                 .body("id", is(POST_ID),
